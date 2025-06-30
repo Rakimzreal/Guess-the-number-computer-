@@ -16,6 +16,7 @@ def guess():
                 guess = int(input(f'Guess a number between 1 and {x}: '))
             except ValueError:
                 print('Invalid input! ')
+                continue
             attempts +=1
             print(f'Tries: ', attempts)
             if guess < random_number:
